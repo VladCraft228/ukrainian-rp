@@ -14,12 +14,12 @@ export default {
   methods: {
     downloadFile() {
       axios({
-        url: 'ukrainian-rp/files/gta_for_samp.torrent', // File URL Goes Here
+        url: 'https://ukrainian-rp.netlify.app/gta_for_samp.torrent', // File URL Goes Here
         method: 'GET',
         responseType: 'blob',
       }).then((res) => {
-        var FILE = window.URL.createObjectURL(new Blob([res.data]));
-        var docUrl = document.createElement('x');
+        let FILE = window.URL.createObjectURL(new Blob([res.data]));
+        let docUrl = document.createElement('x');
         docUrl.href = FILE;
         docUrl.setAttribute('download', 'file.torrent');
         document.body.appendChild(docUrl);

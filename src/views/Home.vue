@@ -8,8 +8,8 @@
         <h2>Для початку гри</h2>
         <p>Потрібно завантажити GTA SA і SAMP (Якщо у вас встановлена GTA SA і є мультиплеєрний клієнт SA-MP – то завантажувати непотрібно)</p>
         <div class="download">
-          <a href="../ukrainian-rp/files/gta_for_samp.torrent"><img class="gtasa" src="../assets/gtasa.jpg"></a>
-          <a href="../ukrainian-rp/files/samp_client_install.torrent"><img class="samp" src="../assets/samp-0-3-7-multipleer.jpg"></a>
+          <a href="../../gta_for_samp.torrent"><img class="gtasa" src="../assets/gtasa.jpg"></a>
+          <a href="../assets/samp_client_install.torrent"><img class="samp" src="../assets/samp-0-3-7-multipleer.jpg"></a>
         </div>
       </Modal>
     </div>
