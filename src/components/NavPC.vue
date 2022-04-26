@@ -32,19 +32,20 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;;
+  width: 20vw;
+  background: #0a0f87;
 }
 
 .nav-background {
   display: flex;
   flex-direction: column;
-  background: #c0c8df;
+  background: #0F20B9;
   border-radius: 20px;
   padding: 20px 0;
   width: 18vw;
 }
 .nav-logo {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .logo {
@@ -69,7 +70,7 @@ export default {
   text-align: center;
   background: #FCFF00;
   mix-blend-mode: normal;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-size: 18pt;
   font-weight: bold;
@@ -81,8 +82,8 @@ export default {
 .nav-menu a:hover {
   transition-property: auto;
   transition: all .5s;
-
 }
+
 .nav-menu a.router-link-exact-active {
   background: #005AFF;
   color: #FCFF00;
@@ -94,6 +95,7 @@ export default {
   display: flex;
   align-items: center;
   text-align: center;
-  background: white;
+  background: #09189b;
+  justify-content: center;
 }
 </style>

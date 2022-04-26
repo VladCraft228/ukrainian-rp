@@ -23,6 +23,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: #0a0f87;
 }
 
 .nav-logo {

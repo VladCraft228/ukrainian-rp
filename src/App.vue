@@ -24,12 +24,13 @@ export default {
   margin-left: 20vw;
   padding: 0 1em;
   box-sizing: border-box;
-  min-height: 100vh;;
+  min-height: 100vh;
+  background: #0a0f87;
 }
 
 .view-background {
   display: flex;
-  background: #c0c8df;
+  background: #0F20B9;
   border-radius: 20px;
   margin: 20px;
 }
@@ -54,24 +55,5 @@ export default {
     display: flex;
   }
 }
-
-/*Scrollbar*/
-::-webkit-scrollbar-track {
-    background-color: #005AFF;
-    }
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0;
-    border-radius: 4px;
-    background-color:#FCFF00;
-    }
-
-::-webkit-scrollbar-thumb:hover{
-    background-color: #cbce0a;
-    }
-
-::-webkit-scrollbar{
-    width: 8px;
-    }
 
 </style>

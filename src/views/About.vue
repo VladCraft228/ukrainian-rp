@@ -25,12 +25,10 @@
 
 .text-header {
   text-align: center;
-  font-size: 24pt;
 }
 
 .text-body {
   text-align: justify;
-  font-size: 16pt;
   padding: 20px 0;
 }
 

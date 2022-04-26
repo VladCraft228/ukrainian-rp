@@ -5,7 +5,11 @@
         <div class="vue-modal-inner" v-show="open">
           <div class="vue-modal-content">
             <slot />
-            <button type="button" @click="$emit('close')">Close</button>
+            <div class="vue-modal-footer">
+              <button type="button" class="material-icons" id="btn" @click="$emit('close')">
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
           </div>
         </div>
       </transition>
@@ -47,18 +51,21 @@ export default {
 }
 
 .vue-modal-inner {
-  max-width: 600px;
+  max-width: 720px;
   margin: 2rem auto;
 }
 
 .vue-modal-content {
   text-align: justify;
   position: relative;
-  background-color: white;
+  background-color: #09189b;
   border-radius: 20px;
-  padding: 1rem;
+  padding: 10px;
 }
 
+.vue-modal-footer {
+  margin-top: 10px;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
