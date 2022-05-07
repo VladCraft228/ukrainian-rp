@@ -4,6 +4,7 @@
             <h1>Зв'язатися з нами:</h1>
           <div class="contact-container">
             <form
+                @submit.prevent="handleSubmit"
                 class="contact-form"
                 name="contact"
                 method="POST"
@@ -12,22 +13,22 @@
             >
               <div>
                 <label>Ім'я: <br />
-                  <input type="text" name="name" placeholder="Paul" required />
+                  <input v-model="form.name" type="text" name="name" placeholder="Paul" required />
                 </label>
               </div>
               <div>
                 <label>Ел.пошта: <br />
-                  <input type="email" name="email" placeholder="example@gmail.com" minlength="6" required />
+                  <input v-model="form.email" type="email" name="email" placeholder="example@gmail.com" minlength="6" required />
                 </label>
               </div>
               <div>
                 <label>Тема: <br />
-                  <input type="text" name="subject" minlength="8" required />
+                  <input v-model="form.subject" type="text" name="subject" minlength="8" required />
                 </label>
               </div>
               <div>
                 <label>Коментарій: <br />
-                <textarea name="comment" required/>
+                <textarea v-model="form.comment" name="comment" required/>
               </label>
               </div>
               <div hidden>
@@ -55,6 +56,40 @@
         </div>
       </div>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      form: {
+        name: '',
+        email: '',
+        subject: '',
+        comment: ''
+      }
+    }),
+    methods: {
+      encode(data) {
+        return Object.keys(data)
+            .map(key => '${encodeUriComponent(key)}=${encodeURIComponent(data[key])}')
+            .join('&')
+      },
+      handleSubmit() {
+        fetch('/', {
+          method: 'post' ,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: this.encode({
+            'form-name': 'contact',
+            ...this.form
+          })
+        })
+            .then(() => console.log('успішно відправлено'))
+            .catch(e => console.error(e))
+      }
+    }
+  }
+</script>
 <style>
 .contact {
   display: flex;
