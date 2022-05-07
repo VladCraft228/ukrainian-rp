@@ -44,13 +44,13 @@
             <h1>Ми в соціальних мережах</h1>
           <div class="social-link">
             <a href="https://www.facebook.com/groups/ukrainianrp">
-              <img src="https://img.icons8.com/color/100/000000/facebook-new.png"/>
+              <img alt="facebook" src="https://img.icons8.com/color/100/000000/facebook-new.png"/>
             </a>
             <a>
-              <img src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
+              <img alt="instagram" src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
             </a>
             <a>
-              <img src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
+              <img alt="tiktok" src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
             </a>
           </div>
         </div>
@@ -58,38 +58,39 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      form: {
-        name: '',
-        email: '',
-        subject: '',
-        comment: ''
-      }
-    }),
-    methods: {
-      encode(data) {
-        return Object.keys(data)
-            .map(key => '${encodeUriComponent(key)}=${encodeURIComponent(data[key])}')
-            .join('&')
-      },
-      handleSubmit() {
-        fetch('/', {
-          method: 'post' ,
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: this.encode({
-            'form-name': 'contact',
-            ...this.form
-          })
+export default {
+  data: () => ({
+    form: {
+      name: '',
+      email: '',
+      subject: '',
+      comment: ''
+    }
+  }),
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+          .map(key => '${encodeURIComponent(key)}=${encodeURIComponent(data[key])}')
+          .join('&')
+    },
+    handleSubmit() {
+      fetch('/', {
+        method: 'post' ,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: this.encode({
+          'form-name': 'contact',
+          ...this.form
         })
-            .then(() => console.log('успішно відправлено'))
-            .catch(e => console.error(e))
-      }
+      })
+          .then(() => console.log('успішно відправлено'))
+          .catch(e => console.error(e))
     }
   }
+}
 </script>
+
 <style>
 .contact {
   display: flex;
