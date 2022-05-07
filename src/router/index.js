@@ -3,6 +3,9 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import NotFound from '../views/NotFound.vue'
 import Contact from '../views/Contact.vue'
+import Extra from "../views/Extra";
+import About_Samp from "../views/extra/About_Samp";
+import RP_termins from "../views/extra/RP_termins";
 
 const routes = [
   {
@@ -15,16 +18,31 @@ const routes = [
     name: 'About',
     component: About
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/extra' ,
+    name: 'Extra' ,
+    component: Extra
+  },
+  {
+    path: '/extra/about-samp' ,
+    name: 'About_Samp' ,
+    component: About_Samp
+  },
+  {
+    path: '/extra/rp-termins' ,
+    name: 'RP_termins' ,
+    component: RP_termins
+  },
   // 404 page
   {
     path: '/:catchAll(.*)',
     name: 'NotFound',
     component: NotFound
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact
   }
 ]
 const router = createRouter({

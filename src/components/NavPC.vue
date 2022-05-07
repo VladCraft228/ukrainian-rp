@@ -8,6 +8,7 @@
         <router-link :to="{ name: 'Home' }">Головна</router-link>
         <router-link :to="{ name: 'About' }">Про проєкт</router-link>
         <router-link :to="{ name: 'Contact' }">Зв'язок</router-link>
+        <router-link :to="{ name: 'Extra' }">Додаток</router-link>
       </div>
       <div class="footer">
         <p>Ukrainian-rp©2022</p>
@@ -41,11 +42,12 @@ export default {
   flex-direction: column;
   background: #0F20B9;
   border-radius: 20px;
-  padding: 20px 0;
   width: 18vw;
+  overflow-y: auto;
+  margin: 20px 0;
 }
 .nav-logo {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .logo {
@@ -72,7 +74,6 @@ export default {
   mix-blend-mode: normal;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  font-size: 18pt;
   font-weight: bold;
   transition-property: auto;
   transition-duration: 4s;

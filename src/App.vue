@@ -20,19 +20,24 @@ export default {
 
 .view-container {
   display: flex;
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin-left: 20vw;
-  padding: 0 1em;
   box-sizing: border-box;
-  min-height: 100vh;
   background: #0a0f87;
 }
 
 .view-background {
+  width: 100%;
+  justify-content: center;
   display: flex;
   background: #0F20B9;
   border-radius: 20px;
   margin: 20px;
+  align-items: center;
 }
 #navbar-mobile {
   display: none;
@@ -40,13 +45,19 @@ export default {
 
 @media screen and (max-width: 988px) {
   .view-container {
+    background: none;
+    position: relative;
     width: 100%;
+    align-items: flex-start;
+    justify-content: center;
     margin-left: 0;
   }
 
   .view-background {
     background: none;
+    margin: 0;
   }
+
   #navbar-desktop {
     display: none;
   }

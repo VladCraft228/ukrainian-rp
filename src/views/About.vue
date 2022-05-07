@@ -1,58 +1,81 @@
 <template>
   <div class="about">
-    <div class="nav-logo">
-      <img class="logo" src="../assets/icon.png" alt="Ukrainian RP logo">
+    <div class="about-inner">
+      <div class="about-logo">
+        <img class="logo" src="../assets/icon.png" alt="Ukrainian RP logo">
+      </div>
+      <div class="about-header">
+        <h1>ПРО ПРОЄКТ <br> UKRAINIAN ROLE PLAY</h1>
+      </div>
+      <div class="about-body"><p>Вам набридли нудні хард РП сервера, вас постійно ігнорує адміністрація на популярних серверах,
+        а ігровий мод вже приївся і став не цікавим, то ласкаво просимо до нашого проекту.
+        У нас на сервері ви знайдете: цікавий ігровий мод, відповідальну і швидко реагуючу адміністрацію,
+        якісний і цікавий мапінг, а також систему невеликих нагород для постійних гравців нашого сервера.
+        Якщо говорити одним реченням, то:</p></div>
+      <div class="about-quotation"><h3>“Ми взяли найкраще, відкинули непотрібне і вийшов Ukrainian Role Play”</h3></div>
     </div>
-    <div class="text-header">
-      <h1>ПРО ПРОЄКТ <br> UKRAINIAN ROLE PLAY</h1>
-    </div>
-    <div class="text-body"><p>Вам набридли нудні хард РП сервера, вас постійно ігнорує адміністрація на популярних серверах,
-      а ігровий мод вже приївся і став не цікавий, то ласкаво просимо до нас на проект.
-      У нас на сервері ви знайдете: цікавий ігровий мод, відповідальну і швидко відповідає адміністрацію,
-      якісний і цікавий маппинг, а так само систему невеликих нагород для постійних гравців нашого сервера.
-      Якщо говорити один пропозицією, то:</p></div>
-    </div>
+  </div>
 </template>
 
 <style>
 .about {
   display: flex;
-  flex-direction: column;
+  border-radius: 20px;
   justify-content: center;
-  align-items: center;
-  padding: 0 20px
+  width: 100%;
+  height: 95%;
+  background: #09189a;
+  margin: 20px;
 }
 
-.text-header {
+.about-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  overflow-y: auto;
+}
+.about-header {
   text-align: center;
 }
 
-.text-body {
-  text-align: justify;
-  padding: 20px 0;
+.about-quotation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #080c74;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.about-quotation h3{
+  margin-block-end: 0;
 }
 
 .logo {
-  width: 256px;
+  width: 20vw;
 }
 
 @media (max-width: 988px) {
   .about {
+    background: none;
     justify-content: flex-start;
     padding: 0;
   }
-  .text-header {
+  .about-header {
     font-size: 5vw;
   }
 
-  .text-body {
-    text-align: justify;
+  .about-body {
     font-size: 5vw;
     padding: 20px 0;
   }
 
   .logo {
-    width: 60vw;
+    width: 20vw;
   }
 }
 </style>

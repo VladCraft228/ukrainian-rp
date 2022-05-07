@@ -6,12 +6,12 @@
           <div class="vue-modal-content">
             <slot />
             <div class="vue-modal-footer">
-              <button type="button" class="material-icons" id="btn" @click="$emit('close')">
-                <span class="material-symbols-outlined">close</span>
+              <button type="button" id="btn" class="material-icons" @click="$emit('close')">
+                <span class="material-symbols-rounded">close</span>
               </button>
             </div>
+            </div>
           </div>
-        </div>
       </transition>
     </div>
   </transition>
@@ -43,28 +43,45 @@ export default {
   display: flex;
   position: fixed;
   width: 80vw;
-  top: 0;
+  top: 5vh;
   left: 20vw;
-  overflow-x: hidden;
-  overflow-y: auto;
+  bottom: 5vh;
   z-index: 1;
 }
 
 .vue-modal-inner {
-  max-width: 720px;
+  max-width: calc(80vw - 256px);
   margin: 2rem auto;
 }
 
 .vue-modal-content {
-  text-align: justify;
+  display: flex;
+  height: 100%;
+  overflow-y: auto;
   position: relative;
-  background-color: #09189b;
+  background-color: #080c74;
   border-radius: 20px;
   padding: 10px;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .vue-modal-footer {
-  margin-top: 10px;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  border-radius: 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 988px) {
+  .vue-modal {
+    left: 10vw;
+  }
+  .vue-modal-inner {
+    max-width: 100%;
+  }
 }
 .fade-enter-active,
 .fade-leave-active {

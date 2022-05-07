@@ -14,9 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #005AFF;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 0 20px;
+  width: 100%;
 }
 </style>

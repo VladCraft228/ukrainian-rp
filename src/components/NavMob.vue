@@ -7,6 +7,7 @@
       <router-link :to="{ name: 'Home' }">Головна</router-link>
       <router-link :to="{ name: 'About' }">Про проєкт</router-link>
       <router-link :to="{ name: 'Contact' }">Зв'язок</router-link>
+      <router-link :to="{ name: 'Extra' }">Додаток</router-link>
     </div>
   </section>
 </template>
@@ -23,11 +24,9 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #0a0f87;
 }
 
 .nav-logo {
-  margin: 20px auto;
   width: 50vw;
   border-radius: 20px;
   background: #42b983;
@@ -38,6 +37,7 @@ export default {
 }
 
 .nav-menu {
+  text-align: center;
   width: 100%;
 }
 </style>
