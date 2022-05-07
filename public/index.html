@@ -95,6 +95,42 @@
       </style>
   </head>
   <body>
+  <form
+          name="contact"
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+          hidden
+  >
+      <div>
+          <label>Ім'я: <br />
+              <input type="text" name="name" placeholder="Paul" required />
+          </label>
+      </div>
+      <div>
+          <label>Ел.пошта: <br />
+              <input type="email" name="email" placeholder="example@gmail.com" minlength="6" required />
+          </label>
+      </div>
+      <div>
+          <label>Тема: <br />
+              <input type="text" name="subject" minlength="8" required />
+          </label>
+      </div>
+      <div>
+          <label>Коментарій: <br />
+              <textarea name="comment" required></textarea>
+          </label>
+      </div>
+      <div hidden>
+          <label>
+              Не заповнюйте це, якщо ви людина: <input name="bot-field" />
+          </label>
+      </div>
+      <div>
+          <button type="submit">Відправити</button>
+      </div>
+  </form>
     <noscript>
       <strong>We're sorry but Ukrainian Role Play doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

@@ -12,25 +12,29 @@
             >
               <div>
                 <label>Ім'я: <br />
-                  <input type="text" name="name" placeholder="Paul" required/>
+                  <input type="text" name="name" placeholder="Paul" required />
                 </label>
               </div>
               <div>
                 <label>Ел.пошта: <br />
-                  <input type="email" name="email" placeholder="example@gmail.com" minlength="6" required/>
+                  <input type="email" name="email" placeholder="example@gmail.com" minlength="6" required />
                 </label>
               </div>
               <div>
                 <label>Тема: <br />
-                  <input type="text" name="subject" minlength="8" required/>
+                  <input type="text" name="subject" minlength="8" required />
                 </label>
               </div>
               <div>
                 <label>Коментарій: <br />
-                <textarea name="comment" required></textarea>
+                <textarea name="comment" required/>
               </label>
               </div>
-              <div data-netlify-recaptcha="true"></div>
+              <div hidden>
+                <label>
+                  Не заповнюйте це, якщо ви людина: <input name="bot-field" />
+                </label>
+              </div>
               <div>
                 <button id="btn" type="submit">Відправити</button>
               </div>
@@ -83,7 +87,7 @@
   align-items: center;
   width: 100%;
 }
-.contact-form input, textarea {
+.contact-form input, .contact-form textarea {
   display: flex;
   background: #080c74;
   color: aliceblue;
