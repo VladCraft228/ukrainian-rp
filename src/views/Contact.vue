@@ -59,6 +59,7 @@
 
 <script>
 export default {
+  name: 'Basic',
   data: () => ({
     form: {
       name: '',
@@ -84,7 +85,7 @@ export default {
           ...this.form
         })
       })
-          .then(() => console.log('успішно відправлено'))
+          .then(() => alert ('успішно відправлено'))
           .catch(e => console.error(e))
     }
   }
