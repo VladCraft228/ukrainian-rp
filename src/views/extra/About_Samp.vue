@@ -153,9 +153,6 @@ export default {
   font-weight: bold;
 }
 
-.about-samp-inner a{
-  text-decoration: none;
-}
 .about-samp-inner li::marker {
   color: #FCFF00;
 }

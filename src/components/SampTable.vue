@@ -135,7 +135,6 @@ export default {
 
 .short-info-inner a {
   padding: 5px;
-  text-decoration: none;
   color: deeppink;
 }
 

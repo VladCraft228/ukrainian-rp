@@ -18,22 +18,23 @@
                   color: aliceblue;
               }
               h1 {
-                  font-size: 2vw;
+                  font-size: 2.5vw;
                   margin-block-start: 0;
                   margin-block-end: 30px;
               }
               h2 {
-                  font-size: 1.5vw ;
+                  font-size: 2vw ;
                   margin-block-start: 0;
                   margin-block-end: 20px;
               }
               h3 {
-                  font-size: 1.2vw;
+                  font-size: 1.5vw;
                   margin-block-start: 0;
                   margin-block-end: 15px;
               }
               p, a, dl, ul, input, textarea, label, ol, button, span {
-                  font-size: 0.8vw;
+                  font-size: 1vw;
+                  text-decoration: none;
               }
               ul, li, dl, dt, dd {
                   margin-block-start: 10px;
@@ -95,42 +96,6 @@
       </style>
   </head>
   <body>
-  <form
-          name="contact"
-          method="POST"
-          data-netlify-recaptcha="true"
-          data-netlify="true"
-          hidden
-  >
-      <div>
-          <label>Ім'я: <br />
-              <input type="text" name="name" placeholder="Paul" required />
-          </label>
-      </div>
-      <div>
-          <label>Ел.пошта: <br />
-              <input type="text" name="email" placeholder="example@gmail.com" minlength="6" required />
-          </label>
-      </div>
-      <div>
-          <label>Тема: <br />
-              <input type="text" name="subject" minlength="8" required />
-          </label>
-      </div>
-      <div>
-          <label>Коментарій: <br />
-              <textarea name="comment" required></textarea>
-          </label>
-      </div>
-      <div hidden>
-          <label>
-              Не заповнюйте це, якщо ви людина: <input name="bot-field" />
-          </label>
-      </div>
-      <div>
-          <button type="submit">Відправити</button>
-      </div>
-  </form>
     <noscript>
       <strong>We're sorry but Ukrainian Role Play doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

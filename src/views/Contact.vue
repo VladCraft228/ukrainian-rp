@@ -4,40 +4,30 @@
             <h1>Зв'язатися з нами:</h1>
           <div class="contact-container">
             <form
-                @submit.prevent="handleSubmit"
+                action="https://formsubmit.co/vladikgavrilyuk02@gmail.com"
                 class="contact-form"
                 name="contact"
                 method="POST"
-                data-netlify-recaptcha="true"
-                data-netlify="true"
             >
               <div>
-                <label>Ім'я: <br />
-                  <input v-model="form.name" type="text" name="name" placeholder="Paul" required />
-                </label>
+                <label for="name">Ім'я: </label>
+                <input type="text" name="name" placeholder="Paul"  required>
               </div>
               <div>
-                <label>Ел.пошта: <br />
-                  <input v-model="form.email" type="email" name="email" placeholder="example@gmail.com" minlength="6" required />
-                </label>
+                <label for="email">Ел.пошта: </label>
+                <input  type="email" name="email" placeholder="example@gmail.com" minlength="6"  required >
               </div>
               <div>
-                <label>Тема: <br />
-                  <input v-model="form.subject" type="text" name="subject" minlength="8" required />
-                </label>
+                <label for="subject">Тема: </label>
+                <input type="text" name="subject" minlength="8"  required  >
               </div>
               <div>
-                <label>Коментарій: <br />
-                <textarea v-model="form.comment" name="comment" required/>
-              </label>
-              </div>
-              <div hidden>
-                <label>
-                  Не заповнюйте це, якщо ви людина: <input name="bot-field" />
-                </label>
+                <label for="comment">Коментарій: </label>
+                <textarea name="comment"  required></textarea>
               </div>
               <div>
                 <button id="btn" type="submit">Відправити</button>
+                <input type="hidden" name="_next" value="https://ukrainian-rp.netlify.app/successful">
               </div>
             </form>
           </div>
@@ -56,41 +46,6 @@
         </div>
       </div>
 </template>
-
-<script>
-export default {
-  name: 'Basic',
-  data: () => ({
-    form: {
-      name: '',
-      email: '',
-      subject: '',
-      comment: ''
-    }
-  }),
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-          .map(key => '${encodeURIComponent(key)}=${encodeURIComponent(data[key])}')
-          .join('&')
-    },
-    handleSubmit() {
-      fetch('/', {
-        method: 'post' ,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: this.encode({
-          'form-name': 'contact',
-          ...this.form
-        })
-      })
-          .then(() => alert ('успішно відправлено'))
-          .catch(e => console.error(e))
-    }
-  }
-}
-</script>
 
 <style>
 .contact {

@@ -1,20 +1,32 @@
 <template>
     <div class="notfound">
+      <div class="notfound-inner">
         <h1>404</h1>
         <h3>Сторінка не знайдена</h3>
         <router-link to="/">
-        <button>На головну</button>
+          <button id="btn">На головну</button>
         </router-link>
+      </div>
     </div>
 </template>
 
 <style>
 .notfound {
   display: flex;
-  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  height: 95%;
+  background: #09189a;
+  margin: 20px;
+}
+.notfound-inner {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
   width: 100%;
+  overflow-y: auto;
 }
 </style>

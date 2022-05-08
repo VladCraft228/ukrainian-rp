@@ -3,9 +3,10 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import NotFound from '../views/NotFound.vue'
 import Contact from '../views/Contact.vue'
-import Extra from "../views/Extra";
-import About_Samp from "../views/extra/About_Samp";
-import RP_termins from "../views/extra/RP_termins";
+import SuccessfulSend from '../views/SuccessfulSend'
+import Extra from '../views/Extra';
+import About_Samp from '../views/extra/About_Samp';
+import RP_termins from '../views/extra/RP_termins';
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/extra/rp-termins' ,
     name: 'RP_termins' ,
     component: RP_termins
+  },
+  {
+    path: '/successful' ,
+    name: 'SuccessfulSend' ,
+    component: SuccessfulSend
   },
   // 404 page
   {
