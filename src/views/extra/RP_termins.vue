@@ -72,6 +72,9 @@
       <dt>Spawn (ReSpawn)</dt>
       <dd>Місце появи персонажа на сервері. На ігровому сленгу – "Респ".</dd>
     </dl>
+    <div class="source-link">
+      <p>Матеріал було взято з сайту: <a href="https://zoneg.ru/raznoe/kak-pravilno-igrat-po-rp-v-sampe.html">https://zoneg.ru/raznoe/kak-pravilno-igrat-po-rp-v-sampe.html</a></p>
+    </div>
   </div>
 
 </div>
@@ -120,4 +123,49 @@ export default {
   color: #cbce0a;
 }
 
+.rp-termins-inner .source-link p {
+  color: gray;
+  font-size: 1.2vw;
+}
+
+.rp-termins-inner .source-link a {
+  color: deeppink;
+  font-size: 1.2vw;
+}
+
+.rp-termins-inner .source-link a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 1440px) {
+  .rp-termins-inner .source-link p {
+    font-size: 0.8vw;
+  }
+
+  .rp-termins-inner .source-link a {
+    color: deeppink;
+    font-size: 0.8vw;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .rp-termins {
+    margin: 0;
+    background: none;
+  }
+
+  .rp-termins-inner {
+    width: 100%;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .rp-termins-inner h1, .rp-termins-inner h2 {
+    text-align: left;
+  }
+
+  .rp-termins-inner .source-link p, .rp-termins-inner .source-link a {
+    font-size: 16px;
+  }
+}
 </style>

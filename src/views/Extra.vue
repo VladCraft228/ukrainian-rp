@@ -65,6 +65,7 @@ export default {
   transform: translateY(3px);
   transition: all .10s ;
 }
+
 .extra-container a{
   display: flex;
   position: relative;
@@ -82,25 +83,40 @@ export default {
   border-radius: 20px;
   position: absolute;
 }
+
 @media screen and (max-width: 988px) {
   .extra {
     background: none;
     margin: 0;
   }
+
+  .extra-inner {
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+  }
+
   .extra-content {
     flex-direction: column;
     align-items: center;
   }
+
   .extra-container {
     margin: 20px 0;
+    width: 100%;
   }
+
   .extra-container a {
     margin: 0;
   }
-  .extra-container h2, a {
-    position: relative;
+
+  .extra-container h2, .extra-container a {
+    position: static;
     text-decoration: none;
+    width: 100%;
+    font-size: 30px;
   }
+
   .extra-container img {
     display: none;
   }

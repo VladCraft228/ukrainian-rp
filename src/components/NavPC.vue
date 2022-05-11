@@ -46,6 +46,7 @@ export default {
   overflow-y: auto;
   margin: 20px 0;
 }
+
 .nav-logo {
   padding: 20px 0;
 }

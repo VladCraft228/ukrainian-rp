@@ -130,39 +130,6 @@ export default {
 }
 </script>
 <style>
-.server-list {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-.server-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #080c74;
-  padding: 20px;
-  border-radius: 20px;
-  width: 15%;
-}
-
-.server-bar p{
-  margin-block-end: 0;
-}
-.progress {
-  background-color: #005AFF;
-  border-radius: 20px;
-  text-align: center;
-}
-/* Container for skill bars */
-.bar {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  width: 100%;
-  background: #09189a;
-}
 
 .home {
   display: flex;
@@ -188,7 +155,7 @@ export default {
   margin-bottom: 20px;
 }
 .image {
-  width: 40%;
+  width: 50%;
   border-radius: 20px;
 }
 .image-text {
@@ -197,7 +164,7 @@ export default {
   text-align: center;
   align-items: center;
   margin-left: 20px;
-  width: 60%;
+  width: 50%;
   flex-direction: column;
 }
 
@@ -245,7 +212,7 @@ export default {
 }
 
 .download-content img {
-  margin-top: 20px;
+  margin: 20px 0;
   max-width: 15vw;
   border-radius: 20px;
 }
@@ -317,10 +284,46 @@ export default {
 .server {
   display: flex;
   width: 100%;
+  text-align: center;
   flex-direction: column;
   align-items: center;
 }
 
+.server-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.server-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #080c74;
+  padding: 20px;
+  border-radius: 20px;
+  width: 15%;
+}
+
+.server-bar p{
+  margin-block-end: 0;
+}
+
+.progress {
+  background-color: #005AFF;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  background: #09189a;
+}
 
 @media screen and (min-width: 1440px) {
   #btn .material-symbols-rounded {
@@ -351,7 +354,6 @@ export default {
 
   .material-symbols-rounded {
     font-size: 4vw;
-    color: #FCFF00;
   }
 
   .progress p {
@@ -360,10 +362,16 @@ export default {
     margin-block-end: 5px;
   }
 }
+
 @media screen and (max-width: 988px) {
   .home {
     margin: 0;
     background: none;
+  }
+
+  .home-inner {
+    padding: 0;
+    margin: 20px;
   }
 
   .start {
@@ -371,23 +379,59 @@ export default {
     align-items: center;
   }
 
+  .image {
+    width: 50%;
+  }
+
+  .download-content img {
+    max-width: 50%;
+  }
+
   .image-text {
     width: 100%;
     margin-left: 0;
   }
+
   .modal-text {
     width: 100%;
     padding: 0;
   }
+
   .material-symbols-rounded {
-    font-size: 8vw;
-    color: #FCFF00;
+    font-size: 60px;
   }
-  .image-text {
-    font-size: 2vw;
+
+  .download {
+    flex-direction: column;
+  }
+
+  .download-link p {
+    display: none;
+  }
+
+  .download-link a {
+    justify-content: center;
+  }
+
+  #btn {
+    padding: 10px;
+  }
+
+  #btn .material-symbols-rounded {
+    font-size: 30px;
+  }
+
+  .icon-designation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bar {
+    width: 95%;
   }
 
   .progress p {
+    font-size: 20px;
     margin-block-start: 10px;
     margin-block-end: 10px;
   }
@@ -398,6 +442,7 @@ export default {
 
   .server-bar {
     margin: 20px 0;
+    padding: 20px 0;
     width: 100%;
   }
 }

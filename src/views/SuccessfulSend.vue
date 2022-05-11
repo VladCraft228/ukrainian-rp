@@ -18,6 +18,7 @@
   background: #09189a;
   margin: 20px;
 }
+
 .successful-send-inner {
   display: flex;
   justify-content: safe center;
@@ -27,5 +28,17 @@
   padding: 20px;
   width: 100%;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 988px) {
+  .successful-send {
+    margin: 100px 0;
+    background: none;
+    text-align: center;
+  }
+
+  .successful-send-inner {
+    padding: 0;
+  }
 }
 </style>

@@ -170,10 +170,12 @@ export default {
 .about-samp-inner .source-link a:hover {
   opacity: 0.8;
 }
+
 @media screen and (min-width: 1440px) {
   .about-samp-inner .source-link p {
     font-size: 0.8vw;
   }
+
   .about-samp-inner .source-link a {
     color: deeppink;
     font-size: 0.8vw;
@@ -183,6 +185,21 @@ export default {
   .about-samp {
     margin: 0;
     background: none;
+    flex-direction: column;
+  }
+
+  .about-samp-inner {
+    padding: 0;
+    margin: 20px;
+  }
+
+  .about-samp-container {
+    width: 100%;
+    background: none;
+  }
+
+  .about-samp-inner .source-link p, .about-samp-inner .source-link a {
+    font-size: 16px;
   }
 }
 </style>

@@ -77,12 +77,24 @@ export default {
 
 @media screen and (max-width: 988px) {
   .vue-modal {
-    left: 10vw;
+    left: 0;
+    width: 100vw;
   }
+
   .vue-modal-inner {
     max-width: 100%;
+    margin: 10px;
+  }
+
+  .vue-modal-footer {
+    justify-content: center;
+  }
+
+  .vue-modal-content {
+    padding: 20px;
   }
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

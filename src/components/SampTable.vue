@@ -97,6 +97,7 @@ export default {
   overflow-y: auto;
   justify-content: space-between;
 }
+
 .samp-logo {
   display: flex;
   margin-bottom: 20px;
@@ -140,5 +141,52 @@ export default {
 
 .short-info-inner a:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 988px) {
+  .samp-table {
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .samp-info {
+    height: auto;
+    background: #080c74;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .samp-logo img {
+    width: 60px;
+  }
+
+  .samp-logo {
+    background: none;
+    padding: 10px;
+    margin: 0;
+    width: 60px;
+  }
+
+  .short-info {
+    height: auto;
+    background: none;
+  }
+
+  .short-info-inner {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .short-info-inner table {
+    width: 100%;
+  }
+
+  .short-info-inner p {
+    padding: 0 5px;
+  }
 }
 </style>

@@ -19,14 +19,25 @@
   background: #09189a;
   margin: 20px;
 }
+
 .notfound-inner {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
   padding: 20px;
   width: 100%;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 988px) {
+  .notfound {
+    margin: 100px 0;
+    background: none;
+    text-align: center;
+  }
+  .notfound-inner {
+    padding: 0;
+  }
 }
 </style>

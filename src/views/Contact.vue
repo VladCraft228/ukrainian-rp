@@ -2,7 +2,6 @@
       <div class="contact">
         <div class="contact-inner">
             <h1>Зв'язатися з нами:</h1>
-          <div class="contact-container">
             <form
                 action="https://formsubmit.co/vladikgavrilyuk02@gmail.com"
                 class="contact-form"
@@ -25,12 +24,11 @@
                 <label for="comment">Коментарій: </label>
                 <textarea name="comment"  required></textarea>
               </div>
-              <div>
+              <div style="text-align: -webkit-center">
                 <button id="btn" type="submit">Відправити</button>
                 <input type="hidden" name="_next" value="https://ukrainian-rp.netlify.app/successful">
               </div>
             </form>
-          </div>
             <h1>Ми в соціальних мережах</h1>
           <div class="social-link">
             <a href="https://www.facebook.com/groups/ukrainianrp">
@@ -66,12 +64,6 @@
   width: 100%;
   overflow-y: auto;
 }
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 20px;
-}
 
 .contact-form {
   display: flex;
@@ -79,6 +71,7 @@
   align-items: center;
   width: 100%;
 }
+
 .contact-form input, .contact-form textarea {
   display: flex;
   background: #080c74;
@@ -119,17 +112,44 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .contact-form input, textarea {
+  .contact-form input, .contact-form textarea {
     padding: 1.5vw;
   }
+
   .social-link img {
     width: 5vw;
   }
 }
+
 @media screen and (max-width: 988px) {
   .contact {
     background: none;
     margin: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-inner {
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .contact-form input, .contact-form textarea {
+    padding: 20px;
+    width: -webkit-fill-available;
+  }
+
+  .contact-form div {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .social-link img {
+    width: 100%;
   }
 }
 </style>

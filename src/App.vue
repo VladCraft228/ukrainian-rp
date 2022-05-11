@@ -46,7 +46,7 @@ export default {
 @media screen and (max-width: 988px) {
   .view-container {
     background: none;
-    position: relative;
+    position: static;
     width: 100%;
     align-items: flex-start;
     justify-content: center;

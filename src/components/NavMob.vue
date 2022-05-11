@@ -1,14 +1,11 @@
 <template>
   <section class="nav">
-    <div class="nav-logo">
-      <router-link to="/"><img class="logo" src="../assets/logo.png" alt="Ukrainian RP logo"></router-link>
-    </div>
-    <div class="nav-menu">
-      <router-link :to="{ name: 'Home' }">Головна</router-link>
-      <router-link :to="{ name: 'About' }">Про проєкт</router-link>
-      <router-link :to="{ name: 'Contact' }">Зв'язок</router-link>
-      <router-link :to="{ name: 'Extra' }">Додаток</router-link>
-    </div>
+      <div class="nav-menu">
+        <router-link class="material-icons" :to="{ name: 'Home' }"><span class="material-symbols-rounded">home</span></router-link>
+        <router-link class="material-icons" :to="{ name: 'About' }"><span class="material-symbols-rounded">manage_search</span></router-link>
+        <router-link class="material-icons" :to="{ name: 'Contact' }"><span class="material-symbols-rounded">contact_mail</span></router-link>
+        <router-link class="material-icons" :to="{ name: 'Extra' }"><span class="material-symbols-rounded">help</span></router-link>
+      </div>
   </section>
 </template>
 
@@ -21,23 +18,28 @@ export default {
 <style scoped>
 .nav {
   display: flex;
+  position: sticky;
+  top: 0;
+  background: #080c74;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.nav-logo {
-  width: 50vw;
-  border-radius: 20px;
-  background: #42b983;
-}
-
-.logo {
-  width: 100%;
-}
-
 .nav-menu {
-  text-align: center;
+  height: 100%;
   width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
 }
+
+.nav-menu a.router-link-exact-active {
+  background: #0a0f87;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 </style>
