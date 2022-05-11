@@ -34,10 +34,10 @@
             <a href="https://www.facebook.com/groups/ukrainianrp">
               <img alt="facebook" src="https://img.icons8.com/color/100/000000/facebook-new.png"/>
             </a>
-            <a>
+            <a onclick="alert('В розробці')">
               <img alt="instagram" src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
             </a>
-            <a>
+            <a onclick="alert('В розробці')">
               <img alt="tiktok" src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
             </a>
           </div>

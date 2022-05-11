@@ -2,7 +2,7 @@
   <section class="nav">
       <div class="nav-menu">
         <router-link class="material-icons" :to="{ name: 'Home' }"><span class="material-symbols-rounded">home</span></router-link>
-        <router-link class="material-icons" :to="{ name: 'About' }"><span class="material-symbols-rounded">manage_search</span></router-link>
+        <router-link class="material-icons" :to="{ name: 'About' }"><span class="material-symbols-rounded">article</span></router-link>
         <router-link class="material-icons" :to="{ name: 'Contact' }"><span class="material-symbols-rounded">contact_mail</span></router-link>
         <router-link class="material-icons" :to="{ name: 'Extra' }"><span class="material-symbols-rounded">help</span></router-link>
       </div>
