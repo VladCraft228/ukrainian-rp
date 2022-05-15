@@ -21,7 +21,6 @@
 
 .successful-send-inner {
   display: flex;
-  justify-content: safe center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
