@@ -1,13 +1,13 @@
 <template>
-    <div class="notfound">
-      <div class="notfound-inner">
-        <h1>404</h1>
-        <h3>Сторінка не знайдена</h3>
-        <router-link to="/">
-          <button id="btn">На головну</button>
-        </router-link>
-      </div>
+  <div class="notfound">
+    <div class="notfound-inner">
+      <h1>404</h1>
+      <h3>Сторінка не знайдена</h3>
+      <router-link to="/">
+        <button id="btn">На головну</button>
+      </router-link>
     </div>
+  </div>
 </template>
 
 <style>
@@ -36,6 +36,7 @@
     background: none;
     text-align: center;
   }
+
   .notfound-inner {
     padding: 0;
   }

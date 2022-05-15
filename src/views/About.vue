@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <div class="about-inner">
-        <img class="logo" src="../assets/icon.png" alt="Ukrainian RP logo">
-        <h1>ПРО ПРОЄКТ <br> UKRAINIAN ROLE PLAY</h1>
+      <img class="logo" src="../assets/icon.png" alt="Ukrainian RP logo">
+      <h1>ПРО ПРОЄКТ <br> UKRAINIAN ROLE PLAY</h1>
       <p>Вам набридли нудні хард РП сервера, вас постійно ігнорує адміністрація на популярних серверах,
         а ігровий мод вже приївся і став не цікавим, то ласкаво просимо до нашого проекту.
         У нас на сервері ви знайдете: цікавий ігровий мод, відповідальну і швидко реагуючу адміністрацію,

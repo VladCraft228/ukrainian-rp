@@ -1,5 +1,5 @@
 <template>
-  <section  class="nav">
+  <section class="nav">
     <div class="nav-background">
       <div class="nav-logo">
         <router-link to="/"><img class="logo" src="../assets/logo.png" alt="Ukrainian RP logo"></router-link>

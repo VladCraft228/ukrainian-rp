@@ -1,17 +1,19 @@
 <template>
-<div class="extra">
-  <div class="extra-inner">
+  <div class="extra">
+    <div class="extra-inner">
       <h1>Корисні сторінки</h1>
-    <div class="extra-content">
-      <div class="extra-container">
-        <RouterLink to="/extra/about-samp"><img alt="about-samp" src="../assets/about-samp.png"><h2>Що таке SA-MP?</h2></RouterLink>
-      </div>
-      <div class="extra-container">
-        <RouterLink to="/extra/rp-termins"><img alt="rp-termins" src="../assets/rp-termins.png"><h2>RP-терміни</h2></RouterLink>
+      <div class="extra-content">
+        <div class="extra-container">
+          <RouterLink to="/extra/about-samp"><img alt="about-samp" src="../assets/about-samp.png">
+            <h2>Що таке SA-MP?</h2></RouterLink>
+        </div>
+        <div class="extra-container">
+          <RouterLink to="/extra/rp-termins"><img alt="rp-termins" src="../assets/rp-termins.png">
+            <h2>RP-терміни</h2></RouterLink>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -47,7 +49,7 @@ export default {
   justify-content: space-around;
 }
 
-.extra-container img{
+.extra-container img {
   width: 100%;
   border-radius: 20px;
   opacity: 0.5;
@@ -63,10 +65,10 @@ export default {
 
 .extra-container:active {
   transform: translateY(3px);
-  transition: all .10s ;
+  transition: all .10s;
 }
 
-.extra-container a{
+.extra-container a {
   display: flex;
   position: relative;
   text-align: center;

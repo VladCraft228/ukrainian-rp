@@ -4,21 +4,21 @@
       <transition name="drop-in">
         <div class="vue-modal-inner" v-show="open">
           <div class="vue-modal-content">
-            <slot />
+            <slot/>
             <div class="vue-modal-footer">
               <button type="button" id="btn" class="material-icons" @click="$emit('close')">
                 <span class="material-symbols-rounded">close</span>
               </button>
             </div>
-            </div>
           </div>
+        </div>
       </transition>
     </div>
   </transition>
 </template>
 
 <script>
-import { onMounted, onUnmounted} from "vue";
+import {onMounted, onUnmounted} from "vue";
 
 export default {
   props: {

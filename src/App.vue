@@ -3,7 +3,7 @@
   <NavMob id="navbar-mobile"/>
   <div class="view-container">
     <div class="view-background">
-      <router-view />
+      <router-view/>
     </div>
   </div>
 </template>
@@ -11,6 +11,7 @@
 <script>
 import NavPC from "@/components/NavPC";
 import NavMob from "@/components/NavMob";
+
 export default {
   components: {NavMob, NavPC}
 }
@@ -39,6 +40,7 @@ export default {
   margin: 20px;
   align-items: center;
 }
+
 #navbar-mobile {
   display: none;
 }

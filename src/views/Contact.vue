@@ -1,48 +1,48 @@
 <template>
-      <div class="contact">
-        <div class="contact-inner">
-            <h1>Зв'язатися з нами:</h1>
-            <form
-                action="https://formsubmit.co/vladikgavrilyuk02@gmail.com"
-                class="contact-form"
-                name="contact"
-                method="POST"
-            >
-              <div>
-                <label for="name">Ім'я: </label>
-                <input type="text" name="name" placeholder="Paul"  required>
-              </div>
-              <div>
-                <label for="email">Ел.пошта: </label>
-                <input  type="email" name="email" placeholder="example@gmail.com" minlength="6"  required >
-              </div>
-              <div>
-                <label for="subject">Тема: </label>
-                <input type="text" name="subject" minlength="8"  required  >
-              </div>
-              <div>
-                <label for="comment">Коментарій: </label>
-                <textarea name="comment"  required></textarea>
-              </div>
-              <div style="text-align: -webkit-center">
-                <button id="btn" type="submit">Відправити</button>
-                <input type="hidden" name="_next" value="https://ukrainian-rp.netlify.app/successful">
-              </div>
-            </form>
-            <h1>Ми в соціальних мережах</h1>
-          <div class="social-link">
-            <a href="https://www.facebook.com/groups/ukrainianrp">
-              <img alt="facebook" src="https://img.icons8.com/color/100/000000/facebook-new.png"/>
-            </a>
-            <a onclick="alert('В розробці')">
-              <img alt="instagram" src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
-            </a>
-            <a onclick="alert('В розробці')">
-              <img alt="tiktok" src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
-            </a>
-          </div>
+  <div class="contact">
+    <div class="contact-inner">
+      <h1>Зв'язатися з нами:</h1>
+      <form
+          action="https://formsubmit.co/vladikgavrilyuk02@gmail.com"
+          class="contact-form"
+          name="contact"
+          method="POST"
+      >
+        <div>
+          <label for="name">Ім'я: </label>
+          <input type="text" name="name" placeholder="Paul" required>
         </div>
+        <div>
+          <label for="email">Ел.пошта: </label>
+          <input type="email" name="email" placeholder="example@gmail.com" minlength="6" required>
+        </div>
+        <div>
+          <label for="subject">Тема: </label>
+          <input type="text" name="subject" minlength="8" required>
+        </div>
+        <div>
+          <label for="comment">Коментарій: </label>
+          <textarea name="comment" required></textarea>
+        </div>
+        <div style="text-align: -webkit-center">
+          <button id="btn" type="submit">Відправити</button>
+          <input type="hidden" name="_next" value="https://ukrainian-rp.netlify.app/contact/successful">
+        </div>
+      </form>
+      <h1>Ми в соціальних мережах</h1>
+      <div class="social-link">
+        <a href="https://www.facebook.com/groups/ukrainianrp">
+          <img alt="facebook" src="https://img.icons8.com/color/100/000000/facebook-new.png"/>
+        </a>
+        <a onclick="alert('В розробці')">
+          <img alt="instagram" src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
+        </a>
+        <a onclick="alert('В розробці')">
+          <img alt="tiktok" src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
+        </a>
       </div>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -108,7 +108,7 @@
 .social-link a:active {
   transform: translateY(3px);
   opacity: 0.8;
-  transition: all .10s ;
+  transition: all .10s;
 }
 
 @media screen and (max-width: 1440px) {

@@ -13,7 +13,8 @@
               <ul class="download-conditions">
                 <li>Якщо у вас нічого не встановлено - завантажувати 1-ий файл</li>
                 <li>Якщо у вас встановлена GTA SA і нема мультиплеєрного клієнту SA-MP – завантажувати 2-ий файл</li>
-                <li>Якщо у вас встановлена GTA SA і є мультиплеєрний клієнт SA-MP – то завантажувати нічого непотрібно</li>
+                <li>Якщо у вас встановлена GTA SA і є мультиплеєрний клієнт SA-MP – то завантажувати нічого непотрібно
+                </li>
               </ul>
               <div class="download">
                 <div class="download-content">
@@ -23,7 +24,8 @@
                   </div>
                   <div class="download-link">
                     <a class="material-icons" href="/files/gta_for_samp.torrent" download>
-                      <span class="material-symbols-rounded">download_for_offline</span><p>Завантажити</p>
+                      <span class="material-symbols-rounded">download_for_offline</span>
+                      <p>Завантажити</p>
                     </a>
                   </div>
                 </div>
@@ -34,7 +36,8 @@
                   </div>
                   <div class="download-link">
                     <a class="material-icons" href="/files/samp_client_install.torrent" download>
-                      <span class="material-symbols-rounded">download_for_offline</span><p>Завантажити</p>
+                      <span class="material-symbols-rounded">download_for_offline</span>
+                      <p>Завантажити</p>
                     </a>
                   </div>
                 </div>
@@ -47,7 +50,8 @@
                 <li>Установка займе приблизно 4 секунди</li>
               </ol>
               <h2>Запуск та налаштування SA-MP клієнта</h2>
-              <p>SAMP можна запустити з робочого столу завдяки ярлику або з кореневої папки. Перед вами має з'явитися вікно:</p>
+              <p>SAMP можна запустити з робочого столу завдяки ярлику або з кореневої папки. Перед вами має з'явитися
+                вікно:</p>
               <div class="samp-launcher">
                 <img src="../assets/launcher-samp.png" alt="samp-launcher">
               </div>
@@ -75,57 +79,53 @@
       </div>
       <div class="server">
         <h1>Список серверів</h1>
-      <div class="server-list">
-        <div class="server-bar">
-          <h3>Kyiv</h3>
-          <p>Заповненість: </p>
-          <div class="bar">
-            <div class="progress" style="width: 100%;"><p>100%</p></div>
+        <div class="server-list">
+          <div class="server-bar">
+            <h3>Kyiv</h3>
+            <p>Заповненість: </p>
+            <div class="bar">
+              <div class="progress" style="width: 100%;"><p>100%</p></div>
+            </div>
+            <p>IP: <a>Скоро...</a></p>
           </div>
-          <p>IP: <a>Скоро...</a></p>
-        </div>
-
-        <div class="server-bar">
-          <h3>Dnipro</h3>
-          <p>Заповненість: </p>
-          <div class="bar">
-            <div class="progress" style="width: 50%;"><p>50%</p></div>
+          <div class="server-bar">
+            <h3>Dnipro</h3>
+            <p>Заповненість: </p>
+            <div class="bar">
+              <div class="progress" style="width: 50%;"><p>50%</p></div>
+            </div>
+            <p>IP: <a>Скоро...</a></p>
           </div>
-          <p>IP: <a>Скоро...</a></p>
-        </div>
-
-        <div class="server-bar">
-          <h3>Lviv</h3>
-          <p>Заповненість: </p>
-          <div class="bar">
-            <div class="progress" style="width: 20%;"><p>20%</p></div>
+          <div class="server-bar">
+            <h3>Lviv</h3>
+            <p>Заповненість: </p>
+            <div class="bar">
+              <div class="progress" style="width: 20%;"><p>20%</p></div>
+            </div>
+            <p>IP: <a>Скоро...</a></p>
           </div>
-          <p>IP: <a>Скоро...</a></p>
-        </div>
-
-        <div class="server-bar">
-          <h3>Odessa</h3>
-          <p>Заповненість: </p>
-          <div class="bar">
-            <div class="progress" style="width: 62%;"><p>62%</p></div>
+          <div class="server-bar">
+            <h3>Odessa</h3>
+            <p>Заповненість: </p>
+            <div class="bar">
+              <div class="progress" style="width: 62%;"><p>62%</p></div>
+            </div>
+            <p>IP: <a>Скоро...</a></p>
           </div>
-          <p>IP: <a>Скоро...</a></p>
         </div>
-
-
-      </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import { ref } from "vue"
+import {ref} from "vue"
 import Modal from "@/components/Modal";
+
 export default {
-  components: { Modal },
-  setup () {
+  components: {Modal},
+  setup() {
     const isOpen = ref(false)
-    return { isOpen }
+    return {isOpen}
   }
 }
 </script>
@@ -148,16 +148,19 @@ export default {
   padding: 20px;
   overflow-y: auto;
 }
+
 .start {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 20px;
 }
+
 .image {
   width: 50%;
   border-radius: 20px;
 }
+
 .image-text {
   display: flex;
   justify-content: center;
@@ -173,7 +176,7 @@ export default {
   align-items: center;
   cursor: pointer;
   color: #005AFF;
-  background-color: #FCFF00 ;
+  background-color: #FCFF00;
   font-weight: bold;
   border-radius: 20px;
   padding: 1vw;
@@ -184,7 +187,7 @@ export default {
 #btn:active {
   box-shadow: 0 6px 4px rgb(0 0 0 / 45%);
   transform: translateY(3px);
-  transition: all .10s ;
+  transition: all .10s;
 }
 
 #btn .material-symbols-rounded {
@@ -237,12 +240,12 @@ export default {
   align-items: center;
 }
 
-.download-link:active{
+.download-link:active {
   transform: translateY(3px);
-  transition: all .10s ;
+  transition: all .10s;
 }
 
-.material-icons p{
+.material-icons p {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #FCFF00;
@@ -307,7 +310,7 @@ export default {
   width: 15%;
 }
 
-.server-bar p{
+.server-bar p {
   margin-block-end: 0;
 }
 
