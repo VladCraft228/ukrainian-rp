@@ -47,7 +47,7 @@
                 <li>Відкрийте скачаний SA-MP клієнт</li>
                 <li>У вікні погодитеся з умовами натиснувши “I Agree”</li>
                 <li>Вкажіть папку зі встановленою GTA San Andreas і натисніть “Install”</li>
-                <li>Установка займе приблизно 4 секунди</li>
+                <li>Встановлення займе приблизно 4 секунди</li>
               </ol>
               <h2>Запуск та налаштування SA-MP клієнта</h2>
               <p>SAMP можна запустити з робочого столу завдяки ярлику або з кореневої папки. Перед вами має з'явитися
@@ -58,7 +58,7 @@
               <ul class="icon-designation">
                 <li>
                   <p class="material-icons"><span class="material-symbols-rounded">play_circle</span></p>
-                  <p>підключитися до сервера</p>
+                  <p>під'єднатися до сервера</p>
                 </li>
                 <li>
                   <p class="material-icons"><span class="material-symbols-rounded">check_circle</span></p>
