@@ -37,8 +37,8 @@
         <a onclick="alert('В розробці')">
           <img alt="instagram" src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"/>
         </a>
-        <a onclick="alert('В розробці')">
-          <img alt="tiktok" src="https://img.icons8.com/color/100/000000/tiktok--v1.png"/>
+        <a href="https://github.com/VladCraft228/ukrainian-rp">
+          <img alt="github" src="https://img.icons8.com/fluency/100/000000/github.png"/>
         </a>
       </div>
     </div>
