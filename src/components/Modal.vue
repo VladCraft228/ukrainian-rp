@@ -77,6 +77,7 @@ export default {
 
 @media screen and (max-width: 988px) {
   .vue-modal {
+    top: 60px;
     left: 0;
     width: 100vw;
   }
