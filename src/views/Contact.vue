@@ -24,7 +24,7 @@
           <label for="comment">Коментарій: </label>
           <textarea name="comment" required></textarea>
         </div>
-        <div style="text-align: -webkit-center">
+        <div style="text-align: -webkit-center;">
           <button id="btn" type="submit">Відправити</button>
           <input type="hidden" name="_next" value="https://ukrainian-rp.netlify.app/contact/successful">
         </div>
@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -125,11 +126,6 @@
   .contact {
     background: none;
     margin: 0;
-  }
-
-  .contact-form {
-    width: 100%;
-    margin-bottom: 30px;
   }
 
   .contact-inner {
