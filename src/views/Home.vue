@@ -35,7 +35,7 @@
                     <h2>SA-MP (без GTA SA)</h2>
                   </div>
                   <div class="download-link">
-                    <a class="material-icons" href="/files/samp_client_install.torrent" download>
+                    <a class="material-icons" href="/files/sa-mp-0.3.7-R4-2-install.exe" download>
                       <span class="material-symbols-rounded">download_for_offline</span>
                       <p>Завантажити</p>
                     </a>

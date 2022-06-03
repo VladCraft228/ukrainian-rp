@@ -62,6 +62,7 @@ export default {
   background-color: #080c74;
   border-radius: 20px;
   padding: 10px;
+  border: 10px #0F20B9 solid;
   align-items: flex-end;
   flex-direction: column;
 }
